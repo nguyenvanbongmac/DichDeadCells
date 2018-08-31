@@ -1,0 +1,2 @@
+String hex after file binary
+use hex editor past to binary

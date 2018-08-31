@@ -1,4 +1,5 @@
 #include <sstream>
+#include <iomanip>
 
 void findAndReplaceAll(std::string & data, std::string toSearch, std::string replaceStr)
 {
@@ -23,10 +24,10 @@ std::string hoandoi(std::string x){
 	return (s1 + s2);
 }
 int findchar(std::string x){
-	size_t i = x.find('');
-	std::string char = x.substr(i+);
+	size_t i = x.find("chars count=");
+	std::string chara = x.substr(i+12);
 	std::stringstream tonum;
-	tonum << char;
+	tonum << chara;
 	int num;
 	tonum >> num;
 	return num;
@@ -35,11 +36,11 @@ std::string id(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('id=');
+	size_t i = x.find("id=");
 	s = x.substr(i+3, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(4) << std::hex << k;
+	ssh << std::setfill('0') << std::setw(4) << std::hex << k;
 	ssh >> sh;
 	return hoandoi(sh);
 	
@@ -48,11 +49,11 @@ std::string tdx(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('x=');
+	size_t i = x.find("x=");
 	s = x.substr(i+2, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(4) << std::hex << k;
+	ssh << std::setfill('0') << std::setw(4) << std::hex << k;
 	ssh >> sh;
 	return hoandoi(sh);
 	
@@ -61,11 +62,11 @@ std::string tdy(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('y=');
+	size_t i = x.find("y=");
 	s = x.substr(i+2, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(4) << std::hex << k;
+	ssh << std::setfill('0') << std::setw(4) << std::hex << k;
 	ssh >> sh;
 	return hoandoi(sh);
 	
@@ -74,11 +75,11 @@ std::string width(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('width=');
+	size_t i = x.find("width=");
 	s = x.substr(i+6, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(2) << std::hex << k;
+	ssh << std::setfill('0') << std::setw(2) << std::hex << k;
 	ssh >> sh;
 	return sh;
 }
@@ -86,11 +87,11 @@ std::string height(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('height=');
+	size_t i = x.find("height=");
 	s = x.substr(i+7, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(2) << std::hex << k;
+	ssh << std::setfill('0') << std::setw(2) << std::hex << k;
 	ssh >> sh;
 	return sh;
 }
@@ -98,35 +99,53 @@ std::string xoffset(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('xoffset=');
+	size_t i = x.find("xoffset=");
 	s = x.substr(i+8, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(2) << std::hex << k;
-	ssh >> sh;
-	return sh;
+	if (k >= 0) {
+		ssh << std::setfill('0') << std::setw(2) << std::hex << k;
+	    ssh >> sh;
+		return sh;
+	}
+	else
+	{
+		ssh << std::hex << k;
+		ssh >> sh;
+		sh.erase(0,6);
+		return sh;
+	}
 }
 std::string yoffset(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('yoffset=');
+	size_t i = x.find("yoffset=");
 	s = x.substr(i+6, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(2) << std::hex << k;
-	ssh >> sh;
-	return sh;
+	if (k >= 0) {
+		ssh << std::setfill('0') << std::setw(2) << std::hex << k;
+	    ssh >> sh;
+		return sh;
+	}
+	else
+	{
+		ssh << std::hex << k;
+		ssh >> sh;
+		sh.erase(0,6);
+		return sh;
+	}
 }
-std::string xadvandce(std::string x){
+std::string xadvance(std::string x){
 	int k;
 	std::string s, sh;
 	std::stringstream ss, ssh;
-	size_t i = x.find('xadvandce=');
-	s = x.substr(i+10, 4);
+	size_t i = x.find("xadvance=");
+	s = x.substr(i+9, 4);
 	ss << s;
 	ss >> k;
-	ssh << setfill('0') << setw(2) << std::hex << k;
+	ssh << std::setfill('0') << std::setw(2) << std::hex << k;
 	ssh >> sh;
 	return sh;
 }
