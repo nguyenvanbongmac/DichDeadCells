@@ -2489,51 +2489,51 @@ msgstr "CHỌN 1 CẢI TIẾN"
 
 # +::prct::% damage with {RED@BR} items.
 msgid "+::prct::% dégâts sur objets {ROUGES@BR}."
-msgstr "+::prct::% dmg với item {@BR} ĐỎ"
+msgstr "+::prct::% dmg với item {ĐỎ@BR}."
 
 # +::prct::% HP
 msgid "+::prct::% PV."
-msgstr "+::prct::% HP"
+msgstr "+::prct::% HP."
 
 # +::prct::% damage with {PURPLE@TA} items.
 msgid "+::prct::% dégâts sur objets {MAUVES@TA}."
-msgstr ""
+msgstr "+ ::prct:: % dmg Item {TÍM@TA}."
 
 # +::prct::% damage with {GREEN@SU} items.
 msgid "+::prct::% dégâts sur objets {VERTS@SU}."
-msgstr ""
+msgstr "+ ::prct:: % dmg Item {XANH@TA}."
 
 # This creature cannot be transformed!
 msgid "Cette créature ne peut être transformée !"
-msgstr ""
+msgstr "Sinh vật này không thể biến đổi được!"
 
 # No new blueprints to be drawn from this creature.
 msgid "Aucun nouveau schéma à tirer de cette créature."
-msgstr ""
+msgstr "Không có mẫu mới nào để vẽ từ sinh vật này."
 
 # Activate
 msgid "Activer"
-msgstr ""
+msgstr "Hoạt động"
 
 # Kill nearby enemies first!
 msgid "Eliminez d'abord les ennemis proches !"
-msgstr ""
+msgstr "Đầu tiên loại bỏ kẻ thù gần đó!"
 
 # Open
 msgid "Ouvrir"
-msgstr ""
+msgstr "Mở"
 
 # Hey! You there! Hit me!
 msgid "Hé ! Vous là ! Ouvrez moi !"
-msgstr ""
+msgstr "Này, bạn đang ở đó! Hãy đánh tôi đi!"
 
 # I've been VERY naughty.
 msgid "J'ai été TRÈS vilain."
-msgstr ""
+msgstr "Tôi đã RẤT hung ác."
 
 # Hit me HARD!
 msgid "Ouvrez moi FORT !"
-msgstr ""
+msgstr "Đánh tôi thật MẠNH !"
 
 # I'm a naughty treasure chest that deserves to be punished...
 msgid "Je suis un vilain coffre qui mérite d'être puni..."
@@ -3845,7 +3845,7 @@ msgstr ""
 
 # {Burns@FI} nearby enemies (::+dps:: DPS for ::duration:: sec).
 msgid "{Brûle@FI} les ennemis proches (::+dps:: DPS sur ::duration:: sec)."
-msgstr ""
+msgstr "{Cháy@FI} les ennemis proches (::+dps:: DPS sur ::duration:: sec)."
 
 # Cleaver
 msgid "Hachoir"
@@ -3857,7 +3857,7 @@ msgstr ""
 
 # Inflicts {bleeding@BL} (::+dotDps:: DPS for ::duration:: sec) on enemies that walk over it.
 msgid "Inflige {saignement@BL} (::+dotDps:: DPS sur ::duration:: sec) aux ennemis qui marchent dessus."
-msgstr ""
+msgstr "Gây ra {chảy máu@BL} (::+dotDps:: DPS sur ::duration:: sec) aux ennemis qui marchent dessus."
 
 # Wolf Trap
 msgid "Piège à loups"
@@ -3981,7 +3981,7 @@ msgstr ""
 
 # {Freezes@IC} its victims.
 msgid "{Gèle@IC} les victimes."
-msgstr ""
+msgstr "{Đóng băng@IC} les victimes."
 
 # Fire Grenade
 msgid "Bombe incendiaire"
@@ -4285,7 +4285,7 @@ msgstr ""
 
 # Inflicts a {critical hit@CC} if you have recently taken damage.
 msgid "Inflige un {coup critique@CC} si vous avez subi des dégâts récemment."
-msgstr ""
+msgstr "Gây ra {đòn chí mạng@CC} si vous avez subi des dégâts récemment."
 
 # A rusty weapon that reveals its power when things get tough.
 msgid "Une arme rouillée dont la puissance se révèle dans les moments difficiles."
@@ -4301,7 +4301,7 @@ msgstr ""
 
 # Inflicts a {critical hit@CC} when you stab your enemy in the back.
 msgid "Inflige un {coup critique@CC} quand vous frappez dans le dos."
-msgstr ""
+msgstr "Gây ra {đòn chí mạng@CC} quand vous frappez dans le dos."
 
 # Light but deadly if you know how to use it.
 msgid "Légère mais mortelle si elle maniée comme il faut."
@@ -4317,7 +4317,7 @@ msgstr ""
 
 # Causes {bleeding@BL} (::+dps:: DPS for ::duration:: sec).
 msgid "Provoque {saignement@BL} (::+dps:: DPS pendant ::duration:: sec)."
-msgstr ""
+msgstr "Nguyên nhân {chảy máu@BL} (::+dps:: DPS pendant ::duration:: sec)."
 
 # Twin Daggers
 msgid "Dagues jumelles"
@@ -4329,7 +4329,7 @@ msgstr ""
 
 # Inflicts a {critical hit@CC} on the 3rd consecutive strike.
 msgid "Le 3ème coup est un {coup critique@CC}."
-msgstr ""
+msgstr "Le 3ème coup est un {đòn chí mạng@CC}."
 
 # Two daggers for the price of one. Slice and dice... guaranteed to please.
 msgid "Deux dagues pour le prix d'une, toujours plus de violence."
@@ -4393,7 +4393,7 @@ msgstr ""
 
 # Inflicts a {critical hit@CC} if the target is {bleeding@BL} or {poisoned@TO}.
 msgid "Inflige un {coup critique@CC} si la cible {saigne@BL} ou est {empoisonnée@TO}."
-msgstr ""
+msgstr "Inflige un {đòn chí mạng@CC} si la cible {chảy máu@BL} ou est {đầu độc@TO}."
 
 # Hit 'em where it hurts.
 msgid "Conçue pour appuyer là où ça fait mal."
@@ -4409,7 +4409,7 @@ msgstr ""
 
 # Inflicts a {critical hit@CC} if you have an active speed buff.
 msgid "Inflige un {coup critique@CC} si votre mouvement est accéléré."
-msgstr ""
+msgstr "Inflige un {đòn chí mạng@CC} si votre mouvement est accéléré."
 
 # Forget about taking your time. To get real results, strike hard and fast.
 msgid "Prendre son temps ? Quel blague. Frapper vite et fort, voilà la recette qui marche."
